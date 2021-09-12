@@ -1,8 +1,9 @@
 package com.builders.admin;
 
-import junit.framework.Assert;
-import org.junit.Test;
 import com.builders.utils.BuildersUtil;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -19,7 +20,7 @@ public class AdminEntryPointTest {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        Assert.assertNotNull(properties.getProperty("test_hello"));
+        Assertions.assertNotNull(properties.getProperty("test_hello"));
     }
 
 }

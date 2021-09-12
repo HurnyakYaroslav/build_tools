@@ -1,6 +1,5 @@
 package com.builders.services;
 
-
 import com.builders.utils.BuildersUtil;
 
 import java.io.IOException;
@@ -10,7 +9,9 @@ import java.util.Properties;
 public class BuilderService {
 
     public String sayHello() {
-        InputStream stream = BuilderService.class.getClassLoader().getResourceAsStream("service_config.properties");
+        InputStream stream =
+                BuilderService.class.getClassLoader()
+                        .getResourceAsStream("service_config.properties");
         Properties properties = new Properties();
         try {
             properties.load(stream);
