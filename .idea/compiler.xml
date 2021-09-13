@@ -12,15 +12,6 @@
         <module name="builders.services.main" />
         <module name="builders.utils.test" />
       </profile>
-      <profile name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="builders.services" />
-        <module name="builders.admin" />
-        <module name="builders.utils" />
-        <module name="builders.web" />
-      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="admin" target="8" />

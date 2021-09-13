@@ -4,6 +4,12 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+.gradle
+.gradle/**
+*/.gradle
+/build/
+
+*.DS_Store
 ### STS ###
 .apt_generated
 .classpath
@@ -26,8 +32,10 @@ target/
 /nbdist/
 /.nb-gradle/
 build/
+ivy/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
 ### VS Code ###
 .vscode/
+
